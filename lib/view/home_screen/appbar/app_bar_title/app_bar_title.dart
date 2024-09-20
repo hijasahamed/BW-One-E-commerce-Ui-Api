@@ -27,10 +27,30 @@ class AppBarTitle extends StatelessWidget {
           weight: FontWeight.bold,
           fontStyle: 'QuickSand',
         ),
-        Icon(
-          Icons.keyboard_arrow_down,
-          size: screenSize.width / 10,
-          color: buttonGreenColor,
+        PopupMenuButton<String>(
+          color: appbackgroundWhite,
+          icon: Icon(
+            Icons.keyboard_arrow_down,
+            size: screenSize.width / 10,
+            color: buttonGreenColor,
+          ),
+          onSelected: (String result) {
+            
+          },
+          itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+            const PopupMenuItem<String>(
+              value: 'Option 1',
+              child: Text('Option 1'),
+            ),
+            const PopupMenuItem<String>(
+              value: 'Option 2',
+              child: Text('Option 2'),
+            ),
+            const PopupMenuItem<String>(
+              value: 'Option 3',
+              child: Text('Option 3'),
+            ),
+          ],
         ),
       ],
     );
