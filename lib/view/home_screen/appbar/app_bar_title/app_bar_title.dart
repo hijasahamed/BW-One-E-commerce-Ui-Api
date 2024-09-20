@@ -15,9 +15,23 @@ class AppBarTitle extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Icon(Icons.place_sharp,size: screenSize.width/12,color: buttonGreenColor,),
-        TextWidget(text: 'ABCD, New Delhi', color: textGreyColor, size: screenSize.width/25, weight: FontWeight.w600),
-        Icon(Icons.keyboard_arrow_down,size: screenSize.width/10,color: buttonGreenColor,),
+        Icon(
+          Icons.place_sharp,
+          size: screenSize.width / 12,
+          color: buttonGreenColor,
+        ),
+        TextWidget(
+          text: 'ABCD, New Delhi',
+          color: textGreyColor,
+          size: screenSize.width / 25,
+          weight: FontWeight.bold,
+          fontStyle: 'QuickSand',
+        ),
+        Icon(
+          Icons.keyboard_arrow_down,
+          size: screenSize.width / 10,
+          color: buttonGreenColor,
+        ),
       ],
     );
   }

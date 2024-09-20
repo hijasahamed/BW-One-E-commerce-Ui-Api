@@ -26,15 +26,16 @@ class AppBarBottom extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 SizedBox(
-                  width: screenSize.width / 2.0,
+                  width: screenSize.width / 1.95,
                   height: screenSize.height / 15,
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: 'Search for products/stores',
                       hintStyle: TextStyle(
+                        fontFamily: 'QuickSand',
                         color: searchContainerTextColor,
-                        fontSize: screenSize.width / 28,
-                        fontWeight: FontWeight.w500,
+                        fontSize: screenSize.width / 30,
+                        fontWeight: FontWeight.bold,
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),

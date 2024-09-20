@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         preferredSize: Size.fromHeight(screenSize.height/6.5), 
         child: AppBarWidget(screenSize: screenSize,)
       ),
-      body: Center(child: TextWidget(text: 'HomeScreen', color: Colors.blueGrey, size: screenSize.width/25, weight: FontWeight.w600),),
+      body: Center(child: TextWidget(text: 'HomeScreen', color: Colors.blueGrey, size: screenSize.width/25, weight: FontWeight.w600,fontStyle: 'QuickSand',),),
     );
   }
 }
