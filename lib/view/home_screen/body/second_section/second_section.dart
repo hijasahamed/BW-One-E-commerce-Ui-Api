@@ -10,11 +10,11 @@ class SecondSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SecondSectionTitle(screenSize: screenSize),
+        SecondSectionTitle(screenSize: screenSize),        
+        DiscountCards(screenSize: screenSize),
         SizedBox(
-          height: screenSize.height / 120,
+          height: screenSize.height / 75,
         ),
-        DiscountCards(screenSize: screenSize)
       ],
     );
   }

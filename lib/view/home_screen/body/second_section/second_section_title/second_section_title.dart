@@ -16,6 +16,7 @@ class SecondSectionTitle extends StatelessWidget {
       padding: EdgeInsets.only(
         left: screenSize.width / 17,
         right: screenSize.width / 17,
+        bottom: screenSize.width / 25,
       ),
       child: TextWidget(
           text: 'Top picks for you',
