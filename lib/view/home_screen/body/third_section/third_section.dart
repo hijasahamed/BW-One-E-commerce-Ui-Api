@@ -1,5 +1,5 @@
-import 'package:bw_week_one_e_commerce/model/colors.dart';
-import 'package:bw_week_one_e_commerce/model/textwidget.dart';
+import 'package:bw_week_one_e_commerce/view/home_screen/body/third_section/third_section_title/third_section_title.dart';
+import 'package:bw_week_one_e_commerce/view/home_screen/body/third_section/trending_item_list/trending_item_list.dart';
 import 'package:flutter/material.dart';
 
 class ThirdSection extends StatelessWidget {
@@ -9,30 +9,8 @@ class ThirdSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
-          padding: EdgeInsets.only(
-            left: screenSize.width / 17,
-            right: screenSize.width / 17,
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              TextWidget(text: 'Trending', color: textGreyColor, fontStyle: 'QuickSand', size: screenSize.width / 19, weight: FontWeight.bold),
-              TextButton(
-                onPressed: () {
-                  
-                }, 
-                child: TextWidget(text: 'See all', color: buttonGreenColor, fontStyle: 'QuickSand', size: screenSize.width / 25, weight: FontWeight.bold)
-              )
-            ],
-          ),
-        ),
-        Container(
-          height: 300,
-          width: screenSize.width,
-          color: Colors.yellow,
-        )
+        ThirdSectionTitle(screenSize: screenSize),
+        TrendingItemList(screenSize: screenSize)
       ],
     );
   }
