@@ -67,6 +67,10 @@ flutter:
     - assets/images/fruits.png
     - assets/images/gift box.png
     - assets/images/gift.svg
+    - assets/images/nearby stores.svg
+    - assets/images/nerby stores.png
+    - assets/images/offer%.png
+    - assets/images/grocery (1) 1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
