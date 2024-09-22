@@ -1,5 +1,5 @@
-import 'package:bw_week_one_e_commerce/model/colors.dart';
-import 'package:bw_week_one_e_commerce/model/textwidget.dart';
+import 'package:bw_week_one_e_commerce/models/colors.dart';
+import 'package:bw_week_one_e_commerce/models/textwidget.dart';
 import 'package:flutter/material.dart';
 
 class NearbyStoresTitle extends StatelessWidget {

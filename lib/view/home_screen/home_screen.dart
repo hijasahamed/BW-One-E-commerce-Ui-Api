@@ -1,4 +1,4 @@
-import 'package:bw_week_one_e_commerce/model/colors.dart';
+import 'package:bw_week_one_e_commerce/models/colors.dart';
 import 'package:bw_week_one_e_commerce/view/home_screen/appbar/app_bar_widget.dart';
 import 'package:bw_week_one_e_commerce/view/home_screen/body/body_widget.dart';
 import 'package:bw_week_one_e_commerce/view/home_screen/bottom_nav_bar/bottom_nav_bar.dart';
