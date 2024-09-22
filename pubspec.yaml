@@ -77,6 +77,10 @@ flutter:
     - assets/images/cart nav grey.png
     - assets/images/home nav green.png
     - assets/images/myorder nav grey.png
+    - assets/images/account nav green.png
+    - assets/images/cart nav green.png
+    - assets/images/home nav grey.png
+    - assets/images/myorder nav green.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
