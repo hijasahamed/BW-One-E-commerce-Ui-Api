@@ -11,3 +11,4 @@ const exploreButtonColor = Color(0xFFEA7E00);
 const checkNowButtonColor = Color(0xFFFF8918);
 const referAndEarnColor = Color(0xFF29D177);
 const nearbyStoreTextColor = Color(0xFF474747);
+const bottomNavColor = Color(0xFF7D7D7D);

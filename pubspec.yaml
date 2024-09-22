@@ -28,10 +28,12 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  bloc: ^8.1.4
   carousel_slider: ^5.0.0
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_svg: ^2.0.10+1
 
 dev_dependencies:
@@ -71,6 +73,10 @@ flutter:
     - assets/images/nerby stores.png
     - assets/images/offer%.png
     - assets/images/grocery (1) 1.png
+    - assets/images/account nav grey.png
+    - assets/images/cart nav grey.png
+    - assets/images/home nav green.png
+    - assets/images/myorder nav grey.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
