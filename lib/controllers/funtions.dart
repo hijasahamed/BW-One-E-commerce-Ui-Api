@@ -1,5 +1,3 @@
-
-
 import 'package:bw_week_one_e_commerce/view/home_screen/bottom_nav_bar/bloc/bottom_navigation_bloc.dart';
 
 int selectedBottomNavIndex = 0;
