@@ -1,4 +1,5 @@
 import 'package:bw_week_one_e_commerce/model/colors.dart';
+import 'package:bw_week_one_e_commerce/view/notifications_screen/notifications_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppBarBottom extends StatelessWidget {
@@ -56,11 +57,14 @@ class AppBarBottom extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            height: screenSize.height/15,
-            width: screenSize.height/15,
-            decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage('assets/images/Group 526.png'))
+          GestureDetector(
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => NotificationsScreen(screenSize: screenSize,),)),
+            child: Container(
+              height: screenSize.height/15,
+              width: screenSize.height/15,
+              decoration: const BoxDecoration(
+                image: DecorationImage(image: AssetImage('assets/images/Group 526.png'))
+              ),
             ),
           ),
           Container(
