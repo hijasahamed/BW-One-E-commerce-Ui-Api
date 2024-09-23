@@ -41,6 +41,8 @@ import 'package:http/http.dart' as http;
 // }
 
 
+// using isolates for multi threding
+
 List<NotificationsApiModel> sortNotificationsInIsolate(List<NotificationsApiModel> notifications) {
   notifications.sort((a, b) => DateTime.parse(b.timestamp).compareTo(DateTime.parse(a.timestamp)));
   return notifications;
