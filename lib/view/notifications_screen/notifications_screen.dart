@@ -53,7 +53,6 @@ class NotificationsScreen extends StatelessWidget {
             );
           } else {
             final notifications = snapshot.data!;
-            List<String> dataList = notifications.map((notification) => notification.image).toList();
             return ListView.builder(
               itemCount: notifications.length,
               itemBuilder: (context, index) {
@@ -61,20 +60,9 @@ class NotificationsScreen extends StatelessWidget {
                 return Column(
                   children: [
                     ListTile(
-                      leading: Container(
-                        height: 50, // Increased size for better visibility
-                        width: 50,  // Adjust this based on your layout
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          image: DecorationImage(
-                            image: NetworkImage(dataList[index]),
-                            fit: BoxFit.cover, // Ensure the image fits within the container
-                            onError: (error, stackTrace) {
-                              // Fallback if image loading fails
-                              print("Image loading failed: $error");
-                            },
-                          ),
-                        ),
+                      leading: Padding(
+                        padding: EdgeInsets.only(bottom: screenSize.width/13),
+                        child: Image.asset('assets/images/${notification.image}'),
                       ),
                       title: TextWidget(
                         text: notification.title,
