@@ -22,7 +22,7 @@ class AppBarBottom extends StatelessWidget {
             borderRadius: BorderRadius.circular(screenSize.width/70)
             ),
             width: screenSize.width/1.6,
-            height: screenSize.height/15,
+            height: screenSize.height/17,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [

@@ -19,10 +19,14 @@ class NotificationScreenBody extends StatelessWidget {
       future: fetchNotifications(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Center(
-            child: CircularProgressIndicator(
-              color: buttonGreenColor,
-              strokeWidth: 3,
+          return Center(
+            child: SizedBox(
+              height: screenSize.width/16,
+            width: screenSize.width/16,
+              child: const CircularProgressIndicator(
+                color: buttonGreenColor,
+                strokeWidth: 2.5,
+              ),
             ),
           );
         } else if (snapshot.hasError) {
@@ -57,7 +61,7 @@ class NotificationScreenBody extends StatelessWidget {
                 children: [
                   ListTile(
                     leading: Padding(
-                      padding: EdgeInsets.only(bottom: screenSize.width/13),
+                      padding: EdgeInsets.only(bottom: screenSize.width/14,),
                       child: Image.asset('assets/images/${notification.image}'),
                     ),
                     title: TextWidget(
