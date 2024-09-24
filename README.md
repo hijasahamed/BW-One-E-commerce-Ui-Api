@@ -4,13 +4,6 @@ This Flutter application consists of two screens—a Home screen and a Notificat
 
 ## Project Overview
 
-### Objective
-The main goal of this project is to:
-- Implement two screens: the **Home screen** and the **Notifications screen**, according to the provided Figma designs.
-- Fetch JSON data from a specified API endpoint and display it on the Notifications screen.
-- Use Dart isolates to efficiently parse JSON data, preventing performance bottlenecks in the UI thread.
-- Write test cases (optional) to ensure the functionality of the app.
-
 ### Features
 - **Home Screen**: Displays the main UI as per the Figma design.
 - **Notifications Screen**: Fetches and displays notification data from an API.
