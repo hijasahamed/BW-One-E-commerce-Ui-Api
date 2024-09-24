@@ -1,4 +1,5 @@
 import 'package:bw_week_one_e_commerce/models/colors.dart';
+import 'package:bw_week_one_e_commerce/models/textwidget.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavItems extends StatelessWidget {
@@ -34,14 +35,7 @@ class BottomNavItems extends StatelessWidget {
               height: screenSize.width / 15,
             ),
             SizedBox(height: screenSize.width / 150),
-            Text(
-              title,
-              style: TextStyle(
-                color: bottomNavColor,
-                fontWeight: FontWeight.bold,
-                fontSize: screenSize.width / 28,
-              ),
-            ),
+            TextWidget(text: title, color: bottomNavColor, fontStyle: 'QuickSand', size: screenSize.width / 28, weight: FontWeight.bold)
           ],
         ),
       ),
