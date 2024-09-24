@@ -1,16 +1,44 @@
-# bw_week_one_e_commerce
+# BW-One-E-commerce-Ui-Api
 
-A new Flutter project.
+This Flutter application consists of two screens—a Home screen and a Notifications screen—based on design mockups from Figma. The app fetches JSON data from an API endpoint and displays it on the Notifications screen. The app is designed for efficient performance by optionally using isolates for JSON parsing.
+
+## Project Overview
+
+### Objective
+The main goal of this project is to:
+- Implement two screens: the **Home screen** and the **Notifications screen**, according to the provided Figma designs.
+- Fetch JSON data from a specified API endpoint and display it on the Notifications screen.
+- Use Dart isolates to efficiently parse JSON data, preventing performance bottlenecks in the UI thread.
+- Write test cases (optional) to ensure the functionality of the app.
+
+### Features
+- **Home Screen**: Displays the main UI as per the Figma design.
+- **Notifications Screen**: Fetches and displays notification data from an API.
+- **Isolates for JSON Parsing**: Utilizes Dart isolates for efficient background processing.
+- **Routing**: Implements navigation between the Home and Notifications screens.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- [Flutter](https://flutter.dev/docs/get-started/install) installed on your local machine.
+- [Dart](https://dart.dev/get-dart) installed.
+- API endpoint for fetching notification data.
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/BW-One-E-commerce-Ui-Api.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd BW-One-E-commerce-Ui-Api
+    ```
+3. Install dependencies:
+    ```bash
+    flutter pub get
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Running the Application
+To run the application on an emulator or a physical device, use:
+```bash
+flutter run
